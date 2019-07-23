@@ -40,7 +40,7 @@ module.exports = class JHelper {
      * @param {Asynchronous function to run} asyncFn 
      * @param {Arguments that will be passed to the asynchronous function} args
      */
-    withTimeout(ms, asyncFn, ...args = []) {
+    withTimeout(ms, asyncFn, ...args) {
         return new Promise((resolve, reject) => {
             setTimeout(() => reject('Timeout'), ms);
             return asyncFn(...args);

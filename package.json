@@ -1,0 +1,27 @@
+{
+  "name": "jhelp",
+  "version": "1.0.0",
+  "description": "Small helper with some useful features",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpdiv-code/jhelp.git"
+  },
+  "keywords": [
+    "javascript",
+    "js",
+    "helper",
+    "help",
+    "utilities",
+    "utils"
+  ],
+  "author": "jpdiv.code",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jpdiv-code/jhelp/issues"
+  },
+  "homepage": "https://github.com/jpdiv-code/jhelp#readme"
+}

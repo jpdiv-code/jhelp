@@ -46,4 +46,44 @@ module.exports = class JHelper {
             return asyncFn(...args);
         });
     }
+
+    /**
+     * Merge one object (src) to another (dist)
+     * Merge arrays and sub-objects
+     * @param {Destination object (to)} dist 
+     * @param {Source object (from)} src 
+     */
+    merge(dist, src) {
+        for (let key in src) {
+            const distValue = dist[key];
+            const srcValue = src[key];
+            if (distValue) {
+                if (typeof distValue === 'object') {
+                    if (Array.isArray(distValue)) {
+                        if (Array.isArray(srcValue)) {
+                            for (let value of srcValue) {
+                                distValue.push(value);
+                            }
+                        } else {
+                            dist[key] = srcValue;
+                        }
+                    } else {
+                        if (typeof srcValue === 'object') {
+                            if (Array.isArray(srcValue)) {
+                                dist[key] = srcValue;
+                            } else {
+                                merge(distValue, srcValue);
+                            }
+                        } else {
+                            dist[key] = srcValue;
+                        }
+                    }
+                } else {
+                    dist[key] = srcValue;
+                }
+            } else {
+                dist[key] = srcValue;
+            }
+        }
+    }
 };

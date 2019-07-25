@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/jpdiv-code/jhelp/issues"
   },
-  "homepage": "https://github.com/jpdiv-code/jhelp#readme"
+  "homepage": "https://github.com/jpdiv-code/jhelp#readme",
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
 }

@@ -72,7 +72,7 @@ module.exports = class JHelper {
                             if (Array.isArray(srcValue)) {
                                 dist[key] = srcValue;
                             } else {
-                                merge(distValue, srcValue);
+                                this.merge(distValue, srcValue);
                             }
                         } else {
                             dist[key] = srcValue;

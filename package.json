@@ -1,6 +1,6 @@
 {
   "name": "jhelp",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Small helper with some useful features",
   "main": "index.js",
   "scripts": {

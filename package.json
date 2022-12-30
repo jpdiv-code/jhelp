@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/jpdiv-code/jhelp#readme",
   "devDependencies": {
-    "mocha": "^6.2.0"
+    "mocha": "^10.2.0"
   }
 }
